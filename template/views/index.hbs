@@ -1,0 +1,29 @@
+<html>
+{{>head}}
+<body>
+    {{>header}}
+    <div class="jumbotron text-center">
+        <h1>{{title}}</h1>
+        <br><br>
+        <div style="max-width: 350px;margin:0 auto">
+            <form class="form_id" id="form_id">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Address:</label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter Address...">
+                    <div class="alert" style="color: red;" id="error" role="alert"></div>
+                </div>
+                <button class="btn btn-outline-dark">Search&nbsp;
+                    <img src="./images/video-play.png" style="width: 12px;margin-top:-2px" alt="">
+                </button>
+            </form>
+            <br>
+            <div class="alert alert-success" id="output" role="alert">
+                Enter location in input box.
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+    <script src="./js/script.js"></script>
+</body>
+</html>
